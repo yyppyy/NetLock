@@ -139,10 +139,10 @@ install_dpdk() {
     rm -rf dpdk
     mkdir dpdk
     cd dpdk
-    wget http://fast.dpdk.org/rel/dpdk-16.11.1.tar.gz
-    tar xf dpdk-16.11.1.tar.gz
-    cd dpdk-stable-16.11.1
-    make install T=x86_64-native-linuxapp-gcc DESTDIR=$HOME/dpdk/dpdk-stable-16.11.1
+    wget http://fast.dpdk.org/rel/dpdk-17.11.1.tar.gz
+    tar xf dpdk-17.11.1.tar.gz
+    cd dpdk-stable-17.11.1
+    make install T=x86_64-native-linuxapp-gcc DESTDIR=$HOME/dpdk/dpdk-stable-17.11.1
     echo export\ RTE_SDK=$HOME/dpdk/dpdk-stable-16.11.1 >> $HOME/.profile
     echo export\ RTE_TARGET=x86_64-native-linuxapp-gcc >> $HOME/.profile
     source ~/.profile
